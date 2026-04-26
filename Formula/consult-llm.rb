@@ -1,26 +1,26 @@
 class ConsultLlm < Formula
   desc "CLI for consulting LLMs from agent workflows"
   homepage "https://github.com/raine/consult-llm"
-  version "3.0.0"
+  version "3.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/raine/consult-llm/releases/download/v3.0.0/consult-llm-darwin-arm64.tar.gz"
-      sha256 "867646516f7c838a99754ac9bad3955561eef1a579ccf31de8a23bb352c5f6e6"
+      url "https://github.com/raine/consult-llm/releases/download/v3.0.2/consult-llm-darwin-arm64.tar.gz"
+      sha256 "2091d615dd4f21c0431e38aa977062826b5b93f40c839610d37a961f698542f7"
     else
-      url "https://github.com/raine/consult-llm/releases/download/v3.0.0/consult-llm-darwin-x64.tar.gz"
-      sha256 "8ed88cd3922d4fe4b25445efe5f3b4b62ba2b65601998baf4818399bddc44284"
+      url "https://github.com/raine/consult-llm/releases/download/v3.0.2/consult-llm-darwin-x64.tar.gz"
+      sha256 "54a33c19333235c384501c43bcf338fdae2c731c286527ff86da1805abba8165"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raine/consult-llm/releases/download/v3.0.0/consult-llm-linux-arm64.tar.gz"
-      sha256 "74d120882142c81832c8bb4bbd337dcffcc6f744ac4540b63144c86217ddfc66"
+      url "https://github.com/raine/consult-llm/releases/download/v3.0.2/consult-llm-linux-arm64.tar.gz"
+      sha256 "a965ed7ac5104e6b37893f6197ff7cc54d2386ad69e8b63dc8fdde244db82394"
     else
-      url "https://github.com/raine/consult-llm/releases/download/v3.0.0/consult-llm-linux-x64.tar.gz"
-      sha256 "dfd600ac55fafd0c9d792ebd53a091b30c43dc92cb2f30d2d0a25902f511d216"
+      url "https://github.com/raine/consult-llm/releases/download/v3.0.2/consult-llm-linux-x64.tar.gz"
+      sha256 "66d588bf45519a2ed3c31221222acbbafdfd6e23ae7454582bb985b5bca44794"
     end
   end
 
@@ -30,6 +30,6 @@ class ConsultLlm < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("\#{bin}/consult-llm --version")
+    assert_match version.to_s, shell_output("#{bin}/consult-llm --version")
   end
 end
