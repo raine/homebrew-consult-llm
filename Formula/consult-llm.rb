@@ -1,26 +1,26 @@
 class ConsultLlm < Formula
   desc "CLI for consulting LLMs from agent workflows"
   homepage "https://github.com/raine/consult-llm"
-  version "3.0.23"
+  version "3.0.24"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/raine/consult-llm/releases/download/v3.0.23/consult-llm-darwin-arm64.tar.gz"
-      sha256 "33b7f7170ef9f5f4568175d1b6b8e5834ed69af21f57fd950dfad643679f1a16"
+      url "https://github.com/raine/consult-llm/releases/download/v3.0.24/consult-llm-darwin-arm64.tar.gz"
+      sha256 "2c3d2fc0a90c3a1f1dd0a2f0c6ccdb46692e0c5d08dda65313e382fd2e4b9cd4"
     else
-      url "https://github.com/raine/consult-llm/releases/download/v3.0.23/consult-llm-darwin-x64.tar.gz"
-      sha256 "d45c3a7738000287784270dba1d88fd25ecd14df0835d115e8fff09460055b5f"
+      url "https://github.com/raine/consult-llm/releases/download/v3.0.24/consult-llm-darwin-x64.tar.gz"
+      sha256 "4809c62ee8474d080ab5d824c35a8e85bf1eacffa4a0fdea57909ddcb5476621"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raine/consult-llm/releases/download/v3.0.23/consult-llm-linux-arm64.tar.gz"
-      sha256 "d7939be34fb1355c0a82cded3c4b9ac46343ece4cff8a8c7a6ea3dc7f290df47"
+      url "https://github.com/raine/consult-llm/releases/download/v3.0.24/consult-llm-linux-arm64.tar.gz"
+      sha256 "0b2c280af7deabda8186bd1084461ec80306f5adbe433aeced7688ac0eb3887d"
     else
-      url "https://github.com/raine/consult-llm/releases/download/v3.0.23/consult-llm-linux-x64.tar.gz"
-      sha256 "406dcdc0abd9170cd05c93f2aaa9a52906f63fc7f71d7c962f42e4a0da4e79e3"
+      url "https://github.com/raine/consult-llm/releases/download/v3.0.24/consult-llm-linux-x64.tar.gz"
+      sha256 "2d884da40bd40fd5d8950eca02a6f57e13b5dcab759bebf0a389dc5220908875"
     end
   end
 
